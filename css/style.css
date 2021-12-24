@@ -324,7 +324,9 @@ ul.show {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items:center;
+    align-content: center;
     justify-content: center;
+    justify-items: center;
 }
 
 @media (min-width: 768px) {
