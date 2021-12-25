@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="./img/isaidev.png" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaziel Isai</title>
@@ -35,7 +36,7 @@
         <main class="main" >
             <div class="info-contect">
                 <h1> Soy <span>Jaziel</span> Isai</h1>
-                <p class="description-main">Hola!!! Me llamo Jaziel, soy Cristiano y actualemnte me identico como FrontEnd y Backend Junnior, me agrada aprender, ayudar y poder desarrollarme para así ofrecer un buen servicio y/o trabajo. <br> Y mucho más... </p>
+                <p class="description-main">Hola!!! Me llamo Jaziel, soy Cristiano y actualemnte me identico como FrontEnd y Backend Junnior</p>
                 <a class="download-a-button" download href="#">
                     <button class="download-CV" type=""> Descargar CV </button>
                 </a> 
@@ -151,18 +152,16 @@
             <div class="servicios-info">
                 <h2> Servicios </h2>
                 <div class="divider"></div>
-                    <ul>
-                        <li> Paginas Web </li>
-                        <li> Aplicaciones Web </li>
-                        <li>  </li>
-                        <li>  </li>
-                    </ul>
+                    <p>Lo que he realizado con mis conocimientos <br> es: <span class="typed-proyects"></span></p>
                 </div>
             <div class="servicios-info">
-                <h2> Skills  </h2>
+                <h2> Los skills que conozco y con los que he <br> trabajado son: <span class="typed-skills">  </span></h2>
                 <div class="divider"></div>
                 <!-- Poner una grafica de circulo mostrando que conozco mas de que -->    
-                
+                <div class="chart-container">
+                    <canvas id="myChart"></canvas>
+                </div>
+
             </div>
         
     </div>
@@ -263,11 +262,22 @@
                     Git Hub
                 </a>
             </div>
-            <p> Jaziel Isaí - Portafolio &copy </p>
+            <p> Todos los derechos reservados &copy / Jaziel Isaí </p>
         </footer>
     </div>
 
+    <!--Typed js-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!--chart js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+
+
+    <script src="./js/typed.js"> </script>
+    <script src="./js/chart.js"></script>
     <script src="./js/menuItems.js"> </script>
+
+
 
 </body>
 </html>

@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=MonteCarlo&family=Philosopher&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
 
 
 :root {
     --FontInitPhilosopher: 'Philosopher', sans-serif;
     --FontMonteCarlo: 'MonteCarlo', cursive;
-    --FontIslandMoments: 'Island Moments', cursive;
+    --FontLora: 'Lora', serif;
     
     --negro: #000000;
     --blanco: #ffffff;
@@ -329,49 +330,6 @@ ul.show {
     justify-items: center;
 }
 
-@media (min-width: 768px) {
-    .main {
-        grid-template-columns: repeat(2, 1fr);
-
-        width: 80vw;
-        height: 80vh;
-        align-items: center;
-    }
-    .main .info-contect{
-        text-align: justify;
-
-    }
-    .main h1{
-        text-align: center;
-        font-size: 4em;
-    }
-    .main .description-main{
-        font-size: 1.6em;
-        margin-right: 20px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .main h1{
-        font-size: 2.5em;
-        margin-top: 10px;
-    }
-
-    .main .description-main{
-        font-size: 1.2em;
-        margin: 10px 0;
-    }
-
-    .img-main {
-        margin: 10px 0 0 0;
-    }
-    .main{
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
 .info-contect {
     text-align: center;
 
@@ -398,9 +356,9 @@ ul.show {
 
 }
 
-.description-main {
-    font-family: var(--FontIslandMoments);
-    font-size: 1.5em;
+.info-contect .description-main {
+    font-family: var(--FontLora);
+    font-size: 0.95em;
 }
 
 .download-CV{
@@ -421,6 +379,49 @@ ul.show {
 
 }
 
+@media (min-width: 768px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
+
+        width: 80vw;
+        height: 80vh;
+        align-items: center;
+    }
+    .main .info-contect{
+        text-align: justify;
+
+    }
+    .main h1{
+        text-align: center;
+        font-size: 4em;
+    }
+    .info-contect .description-main {
+        font-size: 1.2em;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main h1{
+        font-size: 2.5em;
+        margin-top: 10px;
+    }
+
+    .main .description-main{
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    .img-main {
+        margin: 10px 0 0 0;
+    }
+    .main{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
 .img-main {
     
     grid-row: 1 / 2;
@@ -439,6 +440,7 @@ ul.show {
         grid-column: 2 / 3;
         
     }
+
 }
 
 .img-main:hover{
@@ -456,14 +458,17 @@ ul.show {
 }
 
 .about .img-about {
+    margin-left: 1rem; 
     max-width:100%;
     grid-column: 1/6;
-
+    border-radius: 74px;
+    box-shadow:  5px 5px 10px #424d5d,
+                -5px -5px 10px #566379;
 }
 
 .about-info {
     grid-column: 6/10;
-    padding: 2em;
+    padding: 3em;
     color: var(--blanco);
     text-align: justify;
 }
@@ -564,6 +569,8 @@ ul.show {
     height: 370px;
     background: rgb(19,22,48);
     border-radius: 10px;
+    box-shadow:  6px -6px 12px #cacaca,
+    -6px 6px 12px #f6f6f6;
 }
 
 
@@ -667,6 +674,8 @@ ul.show {
 .servicios-info{
     margin: 0 100px;
     width: 80%;
+    height: 100%;
+    max-width: 100%;
     
 }
 
@@ -674,6 +683,21 @@ ul.show {
     font-weight: 300;
 
 }
+
+.servicios-info .chart-container {
+    height:50vh; 
+    width:50vw;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .servicios-info .chart-container {
+        height:50vh; 
+        width:85vw;
+        max-width: 100%;
+    }
+}
+
 
 
 /*Create space for promotion of my blog*/
@@ -722,6 +746,8 @@ ul.show {
     height: 400px;
     background-color: var(--AzulOscuro);
     border-radius: 5%;
+    box-shadow:  6px -6px 12px #0f1019,
+    -6px 6px 12px #151621;
     /*filter:drop-shadow(0 0 6px rgb(57, 191, 231));*/
 }
 
@@ -735,6 +761,7 @@ ul.show {
     background: url(../img/myLap.jpg);
     background-size: cover;
     border-radius: 5%;
+
 }
 
 .blog-img2-personality {
@@ -798,6 +825,7 @@ ul.show {
 .form-content label, .form-content input, .form-content textarea {
     font-size: 1.5em;
     margin-right: 20px;
+    border-radius: 25px;
 }
 
 .form-content .lbl-name{
