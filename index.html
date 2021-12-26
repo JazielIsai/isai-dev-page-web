@@ -33,7 +33,7 @@
 
 
     <div class="inicio" id="inicio">
-        <main class="main" >
+        <main class="main" id="inicio">
             <div class="info-contect">
                 <h1> Soy <span>Jaziel</span> Isai</h1>
                 <p class="description-main">Hola!!! Me llamo Jaziel, soy Cristiano y actualemnte me identico como FrontEnd y Backend Junnior</p>
@@ -150,18 +150,18 @@
     <!--Servicio-->
     <div class="servicios" id="services">
             <div class="servicios-info">
-                <h2> Servicios </h2>
-                <div class="divider"></div>
-                    <p>Lo que he realizado con mis conocimientos <br> es: <span class="typed-proyects"></span></p>
-                </div>
-            <div class="servicios-info">
-                <h2> Los skills que conozco y con los que he <br> trabajado son: <span class="typed-skills">  </span></h2>
+                <h2> Los skills que he aprendido y con los que he <br> trabajado son: <span class="typed-skills">  </span></h2>
                 <div class="divider"></div>
                 <!-- Poner una grafica de circulo mostrando que conozco mas de que -->    
                 <div class="chart-container">
                     <canvas id="myChart"></canvas>
                 </div>
-
+            </div>
+            
+            <div class="servicios-info">
+                <h2> Servicios </h2>
+                <div class="divider"></div>
+                <p class="servicios-info-description"> Lo que he realizado con mis conocimientos<br> en estos lenguajes es: <br> <span class="typed-proyects"></span></p>
             </div>
         
     </div>
@@ -232,6 +232,7 @@
 
                 <input type="submit" value="Enviar" id="btn-form" class="btn-form download-CV" />
             </form>
+            <div class="overlay" id="overlay"></div>
         </div>
     </div>
 
@@ -276,6 +277,7 @@
     <script src="./js/typed.js"> </script>
     <script src="./js/chart.js"></script>
     <script src="./js/menuItems.js"> </script>
+    <script src="./js/overlayForm.js"></script>
 
 
 
