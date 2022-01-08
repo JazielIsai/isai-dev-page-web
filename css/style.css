@@ -24,6 +24,8 @@
 body {
     font-family: var(--FontInitPhilosopher);
     overflow-x: hidden;
+
+    max-width: 100%;
 }
 
 /*Barra o scroll*/
@@ -374,6 +376,8 @@ ul.show {
 }
 
 .download-CV{
+    color: var(--negro);
+    text-decoration: none;
     padding: 10px 20px;
     background-color: aqua;
     border: none;
@@ -630,13 +634,25 @@ ul.show {
     }
 }
 
-.card__img {
+.card__img1, .card__img2, .card__img3 {
     width: 100%;
     height: 150px;
-    background: url(../img/Pasteleria.jpg);
-    background-size: cover;
     border-radius: 10px;
+}
 
+.card__img1 {
+    background: url(../img/Pasteleria.jpg);
+    background-size: cover;    
+}
+
+.card__img2 {
+    background: url(../img/instituto.png);
+    background-size: cover;
+}
+
+.card__img3 {
+    background: url(../img/cateteres.png);
+    background-size: cover;
 }
 
 .card__title{
@@ -1173,4 +1189,79 @@ textarea.is-active{
 .footer-links-img a img{
     width: 75px;
     height: 75px;
+}
+
+/*
+blog
+*/
+
+
+.nav-blog{
+    padding: 3rem;
+    display: flex;
+    place-content: center;
+    background-color: var(--negro);
+}
+
+.nav-blog a {
+    text-decoration: none;
+    color: var(--azulfuentes);
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main-blog {
+    padding: 4rem;
+}
+
+.blog-html {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    place-content: center;
+    gap: 3rem;
+
+}
+
+.blog-html h1{
+    text-align: center;
+}
+
+.blog-html-container {
+    display: grid; 
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2rem;
+    place-content: center;
+    
+}
+
+.blog-html-container img{
+    grid-column: 1 / 5;
+}
+
+.blog-html-container p{
+    grid-column: 5 / 11;
+    text-align: justify;
+}
+
+.blog-html-schooll {
+    text-align: center;
+}
+
+.blog-html-schooll p{
+    color: var(--AzulOscuro);
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
+}
+
+
+@media screen and (max-width: 768px) {
+    .blog-html-container {
+        display: flex;
+        flex-direction: column;
+        
+    }
 }
