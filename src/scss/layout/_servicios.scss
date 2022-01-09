@@ -1,0 +1,75 @@
+.servicios{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(""); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: 50% 50%;
+    color: $blanco;
+    
+    @include grid(2, 0rem);
+    
+    padding: 2em 3.5em;
+    place-content: center;
+    place-items: center;
+
+    .servicios-info{
+        padding: 0 2rem;
+        width: 80%;
+        height: 100%;
+        max-width: 100%;
+        
+        h2 {
+            font-weight: 300;
+        
+            .typed-skills .skills {
+                color: yellow;
+            }
+        }
+
+        .chart-container {
+            height:50vh; 
+            width:50vw;
+            max-width: 100%;
+        }
+
+        .servicios-info-description {
+            font-size: 1.5em;
+        }
+        
+    }
+
+    @media screen and (max-width: 1224px) {
+        
+        @include grid(1, 0rem);
+        
+        .servicios-info .chart-container {
+            height:40vh; 
+            width:90vw;
+            max-width: 100%;
+        }
+    }
+
+    @include tablet {
+        .servicios-info{
+            padding: 0 2rem;
+            margin: 0;   
+        }    
+        .servicios-info .chart-container {
+            height:40vh; 
+            width:85vw;
+            max-width: 100%;
+        }
+    }
+
+    @include telefono{
+        .servicios-info{
+            padding: 0 1rem;
+        }    
+        .servicios-info .chart-container {
+            height:30vh; 
+            width:85vw;
+        }
+    }
+
+}

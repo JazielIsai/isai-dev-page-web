@@ -7,16 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jaziel Isai</title>
 
-    <link rel="./css/normailize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./build/css/app.css" />
+    <!--
+        <link rel="./css/normailize.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    -->
 
 
 </head>
 <body>
 
-    <div class="Page-Menu" id="nav">
+    <div class="Page-Menu " id="nav">
         <div class="Page-Menu-banner">
-            <img src="./img/myLap.jpg" alt="image">
+            <img src="./build/img/myLap.jpg" alt="image">
         </div>
         <div class="Page-Menu-nav">
             <ul>
@@ -32,23 +35,23 @@
     <span class="Page-Menu-menuicon" id="toggle" onclick="menuToggle()"></span>
 
 
-    <div class="inicio" id="inicio">
-        <main class="main" id="inicio">
+    <div class="inicio container" id="inicio">
+        <main class="main " id="inicio">
             <div class="info-contect">
                 <h1> Soy <span>Jaziel</span> Isai</h1>
                 <p class="description-main">Hola!!! Me llamo Jaziel, actualemnte me identifico como FrontEnd y Backend Junnior</p>
-                <a class="download-a-button" download href="#">
+                <a class="download-a-button" download="Jaziel-CV" href="#">
                     <button class="download-CV" type=""> Descargar CV </button>
                 </a> 
             </div>
-            <img class="img-main" src="./img/isaidev.png" alt="Jaziel Isai Perez Garrido"/>
+            <img class="img-main" src="./build/img/isaidev.png" alt="Jaziel Isai Perez Garrido"/>
         </main>
     </div>
 
     <!--Acerca de mi -->
 
-    <div class="about" id="acerca-de-mi">
-        <img class="img-about" src="./img/myLap.jpg" alt="">
+    <div class="about container" id="acerca-de-mi">
+        <img class="img-about" src="./build/img/myLap.jpg" alt="">
         <div class="about-info">
             <h2>Acerca de mi</h2>
             <div class="divider"></div>
@@ -62,13 +65,13 @@
     
     <!--Experiencia en el desarrollo-->
 
-    <div class="projects" id="project-experience">
+    <div class="projects container" id="project-experience">
         <div class="project-headings">
             <h2>My experiencia desarrollando</h2>
             <div class="divider"></div>
         </div>
 
-        <div class="container">
+        <div class="container-proyect">
             <div class="card">
                 <div class="card__img1"> </div>
                 <div class="card__title">
@@ -77,10 +80,10 @@
                 </div>
                 <div class="card__projects-links">
                     <a href="">
-                        <img src="./img/icons/github_logo_icon.ico" alt="Git Hub Projects">
+                        <img src="./build/img/icons/github_logo_icon.ico" alt="Git Hub Projects">
                     </a>
                     <a href="">
-                        <img src="./img/icons/connectedglobe.ico" alt="Busqueda en internet del proyecto">
+                        <img src="./build/img/icons/connectedglobe.ico" alt="Busqueda en internet del proyecto">
                     </a>
                     <!-- <a href="">
                         <img src="./img/icons/rootaccess.ico" alt="Programacion-codigo">
@@ -102,10 +105,10 @@
                 </div>
                 <div class="card__projects-links">
                     <a target="_blank" href="https://github.com/JazielIsai/itsp-web">
-                        <img src="./img/icons/github_logo_icon.ico" alt="Git Hub Projects">
+                        <img src="./build/img/icons/github_logo_icon.ico" alt="Git Hub Projects">
                     </a>
                     <a href="">
-                        <img src="./img/icons/connectedglobe.ico" alt="Busqueda en internet del proyecto">
+                        <img src="./build/img/icons/connectedglobe.ico" alt="Busqueda en internet del proyecto">
                     </a>
                     <!-- <a href="">
                         <img src="./img/icons/rootaccess.ico" alt="Programacion-codigo">
@@ -127,10 +130,10 @@
                 </div>
                 <div class="card__projects-links">
                     <a href="https://github.com/JazielIsai/servicio-catetes">
-                        <img src="./img/icons/github_logo_icon.ico" alt="Git Hub Projects">
+                        <img src="./build/img/icons/github_logo_icon.ico" alt="Git Hub Projects">
                     </a>
                     <a href="">
-                        <img src="./img/icons/connectedglobe.ico" alt="Busqueda en internet del proyecto">
+                        <img src="./build/img/icons/connectedglobe.ico" alt="Busqueda en internet del proyecto">
                     </a>
                     <!-- <a href="">
                         <img src="./img/icons/rootaccess.ico" alt="Programacion-codigo">
@@ -148,7 +151,7 @@
     </div>
 
     <!--Servicio-->
-    <div class="servicios" id="services">
+    <div class="servicios container" id="services">
             <div class="servicios-info">
                 <h2> Los skills que he aprendido y con los que he <br> trabajado son: <span class="typed-skills">  </span></h2>
                 <div class="divider"></div>
@@ -167,7 +170,7 @@
     </div>
 
 
-    <div class="blog" id="blog">
+    <div class="blog container" id="blog">
         <div class="blog-title">
             <h2>Blog Jaziel Isai</h2>
             <div class="divider"></div>
@@ -213,7 +216,7 @@
 
     </div>
 
-    <div class="form-contact" id="contact">
+    <div class="form-contact container" id="contact">
         <div class="form-contact-img"></div>
         <div class="form-content">
             <h2>Contactame por email: </h2>
@@ -257,23 +260,23 @@
             </div>
             <div class="footer-links-img" >
                 <a href="https://www.facebook.com/jaziel.isai/" target="_blank"> 
-                    <img src="./img/icons/social_facebook_1786.png" alt="Facebook" /> <br>
+                    <img src="./build/img/icons/social_facebook_1786.png" alt="Facebook" /> <br>
                     Facebook
                 </a>
                 <a href="https://www.instagram.com/isaigarrido/" target="_blank"> 
-                    <img src="./img/icons/social_instagram_1783.png" alt="Instagram" /> <br>
+                    <img src="./build/img/icons/social_instagram_1783.png" alt="Instagram" /> <br>
                     Instagram
                 </a>
                 <a href="https://twitter.com/Code_Isai" target="_blank"> 
-                    <img src="./img/icons/social_Twitter_1776.png" alt="Twitter" /> <br>
+                    <img src="./build/img/icons/social_Twitter_1776.png" alt="Twitter" /> <br>
                     Twitter
                 </a>
                 <a href="https://www.linkedin.com/in/dev-isa%C3%AD-garrido-3866a0228/" target="_blank"> 
-                    <img src="./img/icons/social_youtube_game_1774.png" alt="Linkedln" /> <br>
+                    <img src="./build/img/icons/social_youtube_game_1774.png" alt="Linkedln" /> <br>
                     Linkedln
                 </a>
                 <a href="https://github.com/JazielIsai" target="_blank" > 
-                    <img src="./img/icons/github_logo_icon.ico" alt="GitHub" /> <br>
+                    <img src="./build/img/icons/github_logo_icon.ico" alt="GitHub" /> <br>
                     Git Hub
                 </a>
             </div>
@@ -288,10 +291,14 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
 
 
-    <script src="./js/typed.js"> </script>
-    <script src="./js/chart.js"></script>
-    <script src="./js/menuItems.js"> </script>
-    <script src="./js/overlayForm.js"></script>
+    <script src="./build/js/main.min.js"></script> 
+    <!--
+
+        <script src="./js/typed.js"> </script>
+        <script src="./js/chart.js"></script>
+        <script src="./js/menuItems.js"> </script>
+        <script src="./js/overlayForm.js"></script>
+    -->
 
 
 

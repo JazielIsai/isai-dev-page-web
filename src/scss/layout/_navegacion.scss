@@ -1,0 +1,132 @@
+
+
+
+.Page-Menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $AzulOscuro;
+    transition: 0.5s;
+}
+
+.Page-Menu.active {
+    top: -100%;
+}
+
+.Page-Menu .Page-Menu-banner { /*Contiene la img*/
+    position: relative;
+    width: 600px;
+    height: 100%;
+}
+
+.Page-Menu .Page-Menu-banner img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Page-Menu .Page-Menu-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.Page-Menu .Page-Menu-nav ul {
+    position: relative;
+}
+
+.Page-Menu .Page-Menu-nav ul li {
+    position: relative;
+    list-style: none;
+    padding: 0 20px;
+    padding: 5px 0; /*originalmente aqui es margin*/
+    overflow: hidden;
+    display: table;
+}
+
+.Page-Menu .Page-Menu-nav ul li:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $azulfuentes;
+    transition: transform 0.5s ease-in-out;
+    transform: scaleY(0);
+    transform-origin: bottom;
+}
+
+.Page-Menu .Page-Menu-nav ul li:hover:before {
+    transition: transform 0.5s ease-in-out;
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+.Page-Menu .Page-Menu-nav ul li a {
+    position: relative;
+    color:  $blanco;
+    text-decoration: none;
+    font-size: 4em;
+    font-weight: 700;
+    line-height: 1em;
+    display: inline-block;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+.Page-Menu .Page-Menu-nav ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    color: $negro;
+}
+
+.Page-Menu .Page-Menu-nav ul li:hover a {
+    transform: translateY(-100%);
+    color: $blanco;
+}
+
+.Page-Menu-menuicon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: url(/build/img/icons/menu-bars-final.ico);
+    background-size: 40px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    box-shadow: 0 0 10px var(--blanco);
+}
+
+.Page-Menu-menuicon.active {
+    background: url(/build/img/icons/menu_inicio.ico);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 10px;
+    box-shadow: 0 0 10px $blanco;
+
+}
+
+@media(max-width:991px) {
+    .Page-Menu .Page-Menu-banner {
+        display: none;
+    }
+    .Page-Menu .Page-Menu-nav ul li a {
+        font-size: 3em;
+    }
+}
