@@ -8,12 +8,12 @@ blog
     padding: 3rem;
     display: flex;
     place-content: center;
-    background-color: var(--negro);
+    background-color: $negro;
 }
 
 .nav-blog a {
     text-decoration: none;
-    color: var(--azulfuentes);
+    color: $azulfuentes;
     font-size: 3rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -67,7 +67,7 @@ blog
 }
 
 .blog-html-schooll p{
-    color: var(--AzulOscuro);
+    color: $AzulOscuro;
     font-size: 2rem;
     font-weight: bold;
     padding-bottom: 1.5rem;
